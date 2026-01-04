@@ -1,0 +1,77 @@
+.container {
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.projectCard {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: var(--radius);
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.projectHeader h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.client {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    display: block;
+}
+
+.status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.projectStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+}
+
+.statValue {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}

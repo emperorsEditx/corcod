@@ -1,0 +1,97 @@
+.container {
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.invoiceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.invoiceCard {
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.invoiceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.number {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    font-weight: 500;
+}
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.clientName {
+    font-weight: 600;
+}
+
+.projectName {
+    font-size: 0.875rem;
+    color: var(--primary);
+}
+
+.status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status.paid { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+.status.pending { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+.status.overdue { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+}
+
+.itemRow {
+    display: grid;
+    grid-template-columns: 1fr 100px 40px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.removeBtn {
+    color: var(--destructive);
+    padding: 0.5rem;
+}
+
+.addBtn {
+    align-self: flex-start;
+    font-size: 0.875rem;
+}
